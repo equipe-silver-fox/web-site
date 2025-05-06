@@ -1,3 +1,24 @@
+:root {
+    /* Primary Colors */
+    --primary-blue: #3F5EFB;
+    --primary-purple: rgba(68, 30, 166, 1);
+    --secondary-blue: #0078d4;
+    --dark-blue: rgba(0, 60, 110, 0.8);
+    
+    /* Background Colors */
+    --bg-gradient: radial-gradient(circle, var(--primary-blue) 0%, var(--primary-purple) 100%);
+    --bg-light: rgba(255, 255, 255, 0.9);
+    --bg-light-transparent: rgba(255, 255, 255, 0.8);
+    
+    /* Accent Colors */
+    --accent-yellow: #FFD700;
+    --accent-beige: #F5F5DC;
+    
+    /* Text Colors */
+    --text-dark: #1a1b4b;
+    --text-light: #ffffff;
+    --text-gray: #555;
+}
 /* Reset e configurações globais */
 * {
     margin: 0;
@@ -34,27 +55,6 @@
     padding-top: 80px; /* Altura do header */
 }
 
-:root {
-    /* Primary Colors */
-    --primary-blue: #3F5EFB;
-    --primary-purple: rgba(68, 30, 166, 1);
-    --secondary-blue: #0078d4;
-    --dark-blue: rgba(0, 60, 110, 0.8);
-    
-    /* Background Colors */
-    --bg-gradient: radial-gradient(circle, var(--primary-blue) 0%, var(--primary-purple) 100%);
-    --bg-light: rgba(255, 255, 255, 0.9);
-    --bg-light-transparent: rgba(255, 255, 255, 0.8);
-    
-    /* Accent Colors */
-    --accent-yellow: #FFD700;
-    --accent-beige: #F5F5DC;
-    
-    /* Text Colors */
-    --text-dark: #1a1b4b;
-    --text-light: #ffffff;
-    --text-gray: #555;
-}
 
 body {
     background: var(--primary-blue);
@@ -139,12 +139,11 @@ body {
 
 /* Header */
 header {
+    
     background: linear-gradient(to right, #1a237e, #0d47a1);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     height: 80px;
     width: 100%;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -152,6 +151,7 @@ header {
 }
 
 .header-content {
+    
     max-width: 1400px;
     margin: 0 auto;
     height: 100%;
@@ -235,9 +235,23 @@ header {
 
 /* Main Content */
 .main-content {
-    margin-top: 20px;
+
+    margin: 0%;
+    height: 90vh;
     display: flex;
-    min-height: calc(100vh - 70px);
+    justify-content: center;
+    align-items: center;
+
+}
+.slogan{
+    background: rgba(255, 255, 255, 0.2); /* Transparência */
+    backdrop-filter: blur(100%);          /* Efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px);  /* Compatibilidade com Safari */
+    padding: 40px;
+    border-radius: 12px;
+    color: var(--text-dark);
+    font-size: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 /* Sidebar */
