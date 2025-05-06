@@ -1,33 +1,74 @@
-<div class="login-container" id="login-page">
-    <div class="login-box">
-        <div class="login-sidebar">
-            <div class="login-logo">
-                <h2>SilverFox</h2>
-                <div style="text-align: center; margin-top: 10px;">
-                    <img src="/api/placeholder/80/80" alt="Logo" style="border-radius: 50%;">
-                </div>
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilverFox - Adoção de Animais</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">SilverFox</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button class="search-icon">🔍</button>
             </div>
-            <div class="login-welcome">
-                <p>Seja Bem Vindo!</p>
-                <p>Acesse sua conta agora mesmo</p>
+            <div class="nav-icons">
+                <a href="/src/pages/incio.html" class="nav-icon">
+                    <span class="icon">🏠</span>
+                    <span>início</span>
+                </a>
+                <a href="/src/pages/login.html" class="nav-icon">
+                    <span class="icon">👤</span>
+                    <span>conta</span>
+                </a>
+                <a href="/src/pages/pets.html" class="nav-icon">
+                    <span class="icon">👤</span>
+                    <span>pets</span>
+                </a>
+                <a href="/src/pages/help.html" class="nav-icon">
+                    <span class="icon">❓</span>
+                    <span>ajuda</span>
+                </a>
             </div>
-            <button class="login-btn">ENTRAR</button>
-            <a href="#" class="forgot-password">Esqueci minha senha</a>
         </div>
-        <div class="login-form">
-            <h2 class="login-title">ENTRE NA SUA CONTA</h2>
-            <form>
-                <div class="form-group">
-                    <span class="form-icon">✉️</span>
-                    <input type="email" placeholder="Email">
+    </header>
+    
+    <div class="login-container" id="login-page">
+        <div class="login-box">
+            <div class="login-sidebar">
+                <div class="login-logo">
+                    <h2>SilverFox</h2>
+                    <div style="text-align: center; margin-top: 10px;">
+                        <img src="/api/placeholder/80/80" alt="Logo" style="border-radius: 50%;">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <span class="form-icon">🔒</span>
-                    <input type="password" placeholder="Senha">
+                <div class="login-welcome">
+                    <p>Seja Bem Vindo!</p>
+                    <p>Acesse sua conta agora mesmo</p>
                 </div>
-                <button type="button" class="login-btn">ENTRAR</button>
-            </form>
-            <a href="#" class="forgot-password">Esqueci minha senha</a>
+                <button class="login-btn">ENTRAR</button>
+                <a href="#" class="forgot-password">Esqueci minha senha</a>
+            </div>
+            <div class="login-form">
+                <h2 class="login-title">ENTRE NA SUA CONTA</h2>
+                <form>
+                    <div class="form-group">
+                        <span class="form-icon">✉️</span>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <span class="form-icon">🔒</span>
+                        <input type="password" placeholder="Senha">
+                    </div>
+                    <button type="button" class="login-btn">ENTRAR</button>
+                </form>
+                <a href="#" class="forgot-password">Esqueci minha senha</a>
+            </div>
         </div>
     </div>
-</div>
+</body>
+</html>
