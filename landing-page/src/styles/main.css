@@ -2,29 +2,84 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 body {
-    background-color: #f0f0f0;
-    background-image: url('/api/placeholder/1600/900');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
+    background: #3F5EFB;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(68, 30, 166, 1) 100%);
+    background-size: 400% 400%;
+    animation: floatingGradient 15s ease-in-out infinite;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #106ebe 0%, #0078d4 100%);
-    opacity: 0.85;
-    z-index: -1;
+@keyframes floatingGradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 2rem 0;
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+}
+
+.terminal-icon {
+    width: 120px;
+    height: 120px;
+    background: #FFD700;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a1b4b;
+    box-shadow: 0 8px 32px rgba(255, 215, 0, 0.2);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #F5F5DC;
+    color: #1a1b4b;
+    box-shadow: 0 4px 15px rgba(245, 245, 220, 0.2);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(245, 245, 220, 0.3);
 }
 
 .container {
