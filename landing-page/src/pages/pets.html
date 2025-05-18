@@ -3,74 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SilverFox - Adoção de Animais</title>
-    <link rel="stylesheet" href="/src/styles/main.css">
+    <title>Pets para Adoção</title>
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
+
 <body>
 
     <header>
         <div class="container header-content">
-            <a href="/src/pages/inicio.html" class="logo">SilverFox</a>
+            <a href="/pages/inicio.html" class="logo">SilverFox</a>
             <div class="search-bar">
-                <input type="text" placeholder="Buscar...">
-                <button class="search-icon">🔍</button>
+                <input type="text" id="search-input" placeholder="Buscar...">
+                <button class="search-icon" >🔍</button>
             </div>
             <div class="nav-icons">
-                <a href="/src/pages/inicio.html" class="nav-icon">
-                    <span class="icon">🏠</span>
+                <a href="/pages/inicio.html" class="nav-icon">
+                    <span class="icon"><img src="/icons/home.svg" alt="" srcset=""></span>
                     <span>início</span>
                 </a>
-                <a href="/src/pages/login.html" class="nav-icon">
-                    <span class="icon">👤</span>
+                <a href="/pages/login.html" class="nav-icon">
+                    <span class="icon"><img src="/icons/user.svg" alt="" srcset=""></span>
                     <span>conta</span>
                 </a>
-                <a href="/src/pages/pets.html" class="nav-icon">
-                    <span class="icon">👤</span>
+                <a href="/pages/pets.html" class="nav-icon">
+                    <span class="icon"><img src="/icons/pet.svg" alt="" srcset=""></span>
                     <span>pets</span>
                 </a>
-                <a href="/src/pages/help.html" class="nav-icon">
-                    <span class="icon">❓</span>
+                <a href="/pages/help.html" class="nav-icon">
+                    <span class="icon"><img src="/icons/help.svg" alt="" srcset=""></span>
                     <span>ajuda</span>
                 </a>
             </div>
         </div>
-    </header>
+    </header>   
+
     <div class="container main-content" id="home-page">
-        <aside class="sidebar">
+        <aside class="sidebar"> 
             <h2>PERSONALIDADES</h2>
             <ul>
-                <li><a href="#">Calmos</a></li>
-                <li><a href="#">Carinhosos</a></li>
-                <li><a href="#">Brincalhões</a></li>
-                <li><a href="#">Agitados</a></li>
+                <li><a href="#" onclick="filterPets('calmo')">Calmos</a></li>
+                <li><a href="#" onclick="filterPets('carinhoso')">Carinhosos</a></li>
+                <li><a href="#" onclick="filterPets('brincalhao')">Brincalhões</a></li>
+                <li><a href="#" onclick="filterPets('agitado')">Agitados</a></li>
             </ul>
             <h2>IDADES</h2>
             <ul>
-                <li><a href="#">1mes-1ano</a></li>
-                <li><a href="#">1ano-2ano</a></li>
-                <li><a href="#">2ano-3ano</a></li>
-                <li><a href="#">3anos-6anos</a></li>
-                <li><a href="#">6ano-15ano</a></li>
+                <li><a href="#" onclick="filterPetsByAge('1mes-1ano')">1mes-1ano</a></li>
+                <li><a href="#" onclick="filterPetsByAge('1ano-2ano')">1ano-2ano</a></li>
+                <li><a href="#" onclick="filterPetsByAge('2ano-3ano')">2ano-3ano</a></li>
+                <li><a href="#" onclick="filterPetsByAge('3anos-6anos')">3anos-6anos</a></li>
+                <li><a href="#" onclick="filterPetsByAge('6ano-15anos')">6ano-15anos</a></li>
             </ul>
         </aside>
+
         <div class="pets-container">
-            <div class="pet-cards">
-                <div class="pet-card">
-                    <div class="pet-image">
-                        <img src="/api/placeholder/300/200" alt="Caramelo">
-                    </div>
-                    <div class="pet-info">
-                        <h3>Nome: Caramelo</h3>
-                        <p>Idade: 1 ano e 5 meses</p>
-                        <p>Personalidade: Calmo e brincalhão</p>
-                        <a href="#" class="adopt-btn">ADOTAR</a>
-                    </div>
-                </div>
-                <!-- Outros pet-cards aqui -->
+            <div class="pet-cards" id="pet-cards">
+                <div id="pets-list"></div>
             </div>
         </div>
     </div>
+
+    <script src="/scripts/script.js"></script>
     
+
 </body>
 </html>
-

@@ -561,6 +561,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    padding: 20px;
 }
 
 .help-form-group {
@@ -577,6 +578,7 @@ header {
     color: var(--text-light);
     font-size: 0.9rem;
     transition: all 0.3s ease;
+
 }
 
 .help-form input:focus,
@@ -584,6 +586,9 @@ header {
     background: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+.help-form input{
+    margin-bottom: 15px;
 }
 
 .help-form-icon {
@@ -672,6 +677,14 @@ header {
 .help-submit:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+
+/*Icons color*/
+
+.nav-icon{
+    fill: white;
+    color: white;
 }
 
 /* Responsive Styles */
