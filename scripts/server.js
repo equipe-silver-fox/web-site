@@ -37,9 +37,16 @@ app.get('/api/pets', (req, res) => {
     });
 });
 
-// Rota para a página pets.html
-app.get('/pets.html', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../src/pages', 'pets.html'));  // Caminho correto para o pets.html
+
+// Rota para servir qualquer arquivo HTML da pasta 'pages'
+app.get('/:page.html', (req, res) => {
+    const page = req.params.page;
+    const filePath = path.join(__dirname, '../../src/pages', `${page}.html`);
+    res.sendFile(filePath, err => {
+        if (err) {
+            res.status(404).send('Página não encontrada');
+        }
+    });
 });
 
 // Iniciar o servidor

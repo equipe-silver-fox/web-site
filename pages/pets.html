@@ -63,43 +63,8 @@
         </div>
     </div>
 
-    <script>
-        // Função para buscar os pets da API
-        async function fetchPets() {
-            try {
-                const response = await fetch('/api/pets');
-                const pets = await response.json();
-
-                const petsListContainer = document.getElementById('pets-list');
-                petsListContainer.innerHTML = ""; // Limpa antes de adicionar
-
-                pets.forEach(pet => {
-                    const petCard = document.createElement('div');
-                    petCard.classList.add('pet-card');
-                    // Corrige o caminho da imagem se necessário
-                    let imgSrc = pet.imagem;
-                    if (!imgSrc.startsWith('/')) {
-                        imgSrc = '/' + imgSrc;
-                    }
-                    petCard.innerHTML = `
-                        <div class="pet-info">
-                            <h3>${pet.nome}</h3>
-                            <p>Idade: ${pet.idade}</p>
-                            <p>Personalidade: ${pet.personalidade}</p>
-                            <img src="${imgSrc}" alt="${pet.nome}" />
-                            <a href="#" class="adopt-btn">ADOTAR</a>
-                        </div>
-                    `;
-                    petsListContainer.appendChild(petCard);
-                });
-            } catch (error) {
-                console.error('Erro ao buscar os pets:', error);
-            }
-        }
-
-        // Carregar os pets quando a página for carregada
-        window.onload = fetchPets;
-    </script>
+    <script src="/scripts/script.js"></script>
+    
 
 </body>
 </html>
