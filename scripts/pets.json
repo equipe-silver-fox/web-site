@@ -1,0 +1,145 @@
+[
+  {
+    "nome": "Nuvem",
+    "idade": "6 meses",
+    "personalidade": "calmo",
+    "faixa_idade": "1mes-1ano",
+    "imagem": "/api/placeholder/300/200"
+  },
+  {
+    "nome": "Tom",
+    "idade": "1 ano e 4 meses",
+    "personalidade": "calmo",
+    "faixa_idade": "1ano-2ano",
+    "imagem": "/api/placeholder/300/200"
+  },
+  {
+    "nome": "Bento",
+    "idade": "2 anos e 2 meses",
+    "personalidade": "calmo",
+    "faixa_idade": "2ano-3ano",
+    "imagem": "/api/placeholder/300/200"
+  },
+  {
+    "nome": "Gaia",
+    "idade": "4 anos",
+    "personalidade": "calmo",
+    "faixa_idade": "3anos-6anos",
+    "imagem": "/api/placeholder/300/200"
+  },
+  {
+    "nome": "Zuzu",
+    "idade": "10 anos",
+    "personalidade": "calmo",
+    "faixa_idade": "6ano-15anos",
+    "imagem": "/api/placeholder/300/200"
+  },
+
+  {
+    "nome": "Pingo",
+    "idade": "8 meses",
+    "personalidade": "carinhoso",
+    "faixa_idade": "1mes-1ano",
+    "imagem": "/api/placeholder/300/200"
+  },
+  {
+    "nome": "Lola",
+    "idade": "1 ano e 6 meses",
+    "personalidade": "carinhoso",
+    "faixa_idade": "1ano-2ano",
+    "imagem": "/api/placeholder/300/200"
+  },
+  {
+    "nome": "Melão",
+    "idade": "2 anos e 9 meses",
+    "personalidade": "carinhoso",
+    "faixa_idade": "2ano-3ano",
+    "imagem": "/api/placeholder/300/200"
+  },
+  {
+    "nome": "Teca",
+    "idade": "5 anos",
+    "personalidade": "carinhoso",
+    "faixa_idade": "3anos-6anos",
+    "imagem": "/api/placeholder/300/200"
+  },
+  {
+    "nome": "Tutu",
+    "idade": "11 anos",
+    "personalidade": "carinhoso",
+    "faixa_idade": "6ano-15anos",
+    "imagem": "/api/placeholder/300/200"
+  },
+
+  {
+    "nome": "Zizi",
+    "idade": "10 meses",
+    "personalidade": "brincalhao",
+    "faixa_idade": "1mes-1ano",
+    "imagem": "/api/placeholder/300/200"
+  },
+  {
+    "nome": "Leléco",
+    "idade": "1 ano e 8 meses",
+    "personalidade": "brincalhao",
+    "faixa_idade": "1ano-2ano",
+    "imagem": "/api/placeholder/300/200"
+  },
+  {
+    "nome": "Teco",
+    "idade": "3 anos",
+    "personalidade": "brincalhao",
+    "faixa_idade": "2ano-3ano",
+    "imagem": "/api/placeholder/300/200"
+  },
+  {
+    "nome": "Rabisco",
+    "idade": "4 anos e 5 meses",
+    "personalidade": "brincalhao",
+    "faixa_idade": "3anos-6anos",
+    "imagem": "/api/placeholder/300/200"
+  },
+  {
+    "nome": "Bolota",
+    "idade": "8 anos",
+    "personalidade": "brincalhao",
+    "faixa_idade": "6ano-15anos",
+    "imagem": "/api/placeholder/300/200"
+  },
+
+  {
+    "nome": "Jujuba",
+    "idade": "7 meses",
+    "personalidade": "agitado",
+    "faixa_idade": "1mes-1ano",
+    "imagem": "/api/placeholder/300/200"
+  },
+  {
+    "nome": "Pitico",
+    "idade": "1 ano e 9 meses",
+    "personalidade": "agitado",
+    "faixa_idade": "1ano-2ano",
+    "imagem": "/api/placeholder/300/200"
+  },
+  {
+    "nome": "Rock",
+    "idade": "3 anos",
+    "personalidade": "agitado",
+    "faixa_idade": "2ano-3ano",
+    "imagem": "/api/placeholder/300/200"
+  },
+  {
+    "nome": "Kiko",
+    "idade": "5 anos e 4 meses",
+    "personalidade": "agitado",
+    "faixa_idade": "3anos-6anos",
+    "imagem": "/api/placeholder/300/200"
+  },
+  {
+    "nome": "Faísca",
+    "idade": "13 anos",
+    "personalidade": "agitado",
+    "faixa_idade": "6ano-15anos",
+    "imagem": "/api/placeholder/300/200"
+  }
+]

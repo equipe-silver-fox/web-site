@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets para Adoção</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-content">
+            <a href="/pages/inicio.html" class="logo">SilverFox</a>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Buscar...">
+                <button class="search-icon" >🔍</button>
+            </div>
+            <div class="nav-icons">
+                <a href="/pages/inicio.html" class="nav-icon">
+                    <span class="icon"><img src="/icons/home.svg" alt="" srcset=""></span>
+                    <span>início</span>
+                </a>
+                <a href="/pages/login.html" class="nav-icon">
+                    <span class="icon"><img src="/icons/user.svg" alt="" srcset=""></span>
+                    <span>conta</span>
+                </a>
+                <a href="/pages/pets.html" class="nav-icon">
+                    <span class="icon"><img src="/icons/pet.svg" alt="" srcset=""></span>
+                    <span>pets</span>
+                </a>
+                <a href="/pages/help.html" class="nav-icon">
+                    <span class="icon"><img src="/icons/help.svg" alt="" srcset=""></span>
+                    <span>ajuda</span>
+                </a>
+            </div>
+        </div>
+    </header>   
+
+    <div class="container main-content" id="home-page">
+        <aside class="sidebar"> 
+            <h2>PERSONALIDADES</h2>
+            <ul>
+                <li><a href="#" onclick="filterPets('calmo')">Calmos</a></li>
+                <li><a href="#" onclick="filterPets('carinhoso')">Carinhosos</a></li>
+                <li><a href="#" onclick="filterPets('brincalhao')">Brincalhões</a></li>
+                <li><a href="#" onclick="filterPets('agitado')">Agitados</a></li>
+            </ul>
+            <h2>IDADES</h2>
+            <ul>
+                <li><a href="#" onclick="filterPetsByAge('1mes-1ano')">1mes-1ano</a></li>
+                <li><a href="#" onclick="filterPetsByAge('1ano-2ano')">1ano-2ano</a></li>
+                <li><a href="#" onclick="filterPetsByAge('2ano-3ano')">2ano-3ano</a></li>
+                <li><a href="#" onclick="filterPetsByAge('3anos-6anos')">3anos-6anos</a></li>
+                <li><a href="#" onclick="filterPetsByAge('6ano-15anos')">6ano-15anos</a></li>
+            </ul>
+        </aside>
+
+        <div class="pets-container">
+            <div class="pet-cards" id="pet-cards">
+                <div id="pets-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Função para buscar os pets da API
+        async function fetchPets() {
+            try {
+                const response = await fetch('/api/pets');
+                const pets = await response.json();
+
+                const petsListContainer = document.getElementById('pets-list');
+                petsListContainer.innerHTML = ""; // Limpa antes de adicionar
+
+                pets.forEach(pet => {
+                    const petCard = document.createElement('div');
+                    petCard.classList.add('pet-card');
+                    // Corrige o caminho da imagem se necessário
+                    let imgSrc = pet.imagem;
+                    if (!imgSrc.startsWith('/')) {
+                        imgSrc = '/' + imgSrc;
+                    }
+                    petCard.innerHTML = `
+                        <div class="pet-info">
+                            <h3>${pet.nome}</h3>
+                            <p>Idade: ${pet.idade}</p>
+                            <p>Personalidade: ${pet.personalidade}</p>
+                            <img src="${imgSrc}" alt="${pet.nome}" />
+                            <a href="#" class="adopt-btn">ADOTAR</a>
+                        </div>
+                    `;
+                    petsListContainer.appendChild(petCard);
+                });
+            } catch (error) {
+                console.error('Erro ao buscar os pets:', error);
+            }
+        }
+
+        // Carregar os pets quando a página for carregada
+        window.onload = fetchPets;
+    </script>
+
+</body>
+</html>
