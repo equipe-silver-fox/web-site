@@ -1,72 +1,69 @@
 [
-    
-    
-    
     {
-        "imagem": " ",
+        "imagem": "/pets/1pet.png",
         "nome": "Nuvem",
         "idade": "6 meses",
         "personalidade": "calmo",
         "faixa_idade": "1mes-1ano"
     },
     {
-        "imagem": " ",
+        "imagem": "/pets/2pet.png",
         "nome": "Tom",
         "idade": "1 ano e 4 meses",
         "personalidade": "calmo",
         "faixa_idade": "1ano-2ano"
     },
     {
-        "imagem": " ",
+        "imagem": "/pets/3pet.png",
         "nome": "Bento",
         "idade": "2 anos e 2 meses",
         "personalidade": "carinhoso",
         "faixa_idade": "2ano-3ano"
     },
     {
-        "imagem": " ",
+        "imagem": "/pets/4pet.png",
         "nome": "Gaia",
         "idade": "4 anos",
         "personalidade": "brincalhao",
         "faixa_idade": "3anos-6anos"
     },
     {
-        "imagem": " ",
+        "imagem": "/pets/5pet.png",
         "nome": "Zuzu",
         "idade": "10 anos",
         "personalidade": "agitado",
         "faixa_idade": "6ano-15anos"
     },
     {
-        "imagem": " ",
+        "imagem": "/pets/6pet.png",
         "nome": "Pingo",
         "idade": "8 meses",
         "personalidade": "carinhoso",
         "faixa_idade": "1mes-1ano"
     },
     {
-        "imagem": " ",
+        "imagem": "/pets/7pet.png",
         "nome": "Lola",
         "idade": "1 ano e 6 meses",
         "personalidade": "brincalhao",
         "faixa_idade": "1ano-2ano"
     },
     {
-        "imagem": " ",
+        "imagem": "/pets/8pet.png",
         "nome": "Melão",
         "idade": "2 anos e 9 meses",
         "personalidade": "agitado",
         "faixa_idade": "2ano-3ano"
     },
     {
-        "imagem": " ",
+        "imagem": "/pets/9pet.png",
         "nome": "Teca",
         "idade": "5 anos",
         "personalidade": "calmo",
         "faixa_idade": "3anos-6anos"
     },
     {
-        "imagem": " ",
+        "imagem": "/pets/10pet.png",
         "nome": "Tutu",
         "idade": "11 anos",
         "personalidade": "carinhoso",

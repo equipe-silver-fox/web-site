@@ -4,36 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SilverFox - Adoção de Animais</title>
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
     <link rel="stylesheet" href="/styles/main.css">
+    
 </head>
 <body>
     <header>
         <div class="container header-content">
-            <a href="/pages/inicio.html" class="logo">SilverFox</a>
+            <a href="/pages/index.html" class="logo">SilverFox</a>
             <div class="search-bar">
                 <input type="text" placeholder="Buscar...">
                 <button class="search-icon">🔍</button>
             </div>
             <div class="nav-icons">
-                <a href="/pages/inicio.html" class="nav-icon">
-                    <span class="icon"><img src="/icons/home.svg" alt="" srcset=""></span>
+                <a href="/pages/index.html" class="nav-icon">
+                    <span class="icon"><img src="/icons/home.svg" alt="icone"></span>
                     <span>início</span>
                 </a>
                 <a href="/pages/login.html" class="nav-icon">
-                    <span class="icon"><img src="/icons/user.svg" alt="" srcset=""></span>
+                    <span class="icon"><img src="/icons/user.svg" alt="icone"></span>
                     <span>conta</span>
                 </a>
                 <a href="/pages/pets.html" class="nav-icon">
-                    <span class="icon"><img src="/icons/pet.svg" alt="" srcset=""></span>
+                    <span class="icon"><img src="/icons/pet.svg" alt="icone"></span>
                     <span>pets</span>
                 </a>
                 <a href="/pages/help.html" class="nav-icon">
-                    <span class="icon"><img src="/icons/help.svg" alt="" srcset=""></span>
+                    <span class="icon"><img src="/icons/help.svg" alt="icone"></span>
                     <span>ajuda</span>
                 </a>
             </div>
         </div>
-    </header>   
+    </header>    
     
     <div class="login-container" id="login-page">
         <div class="login-box">
@@ -41,15 +43,23 @@
                 <div class="login-logo">
                     <h2>SilverFox</h2>
                     <div style="text-align: center; margin-top: 10px;">
-                        <img src="/api/placeholder/80/80" alt="Logo" style="border-radius: 50%;">
+                        <img src="/icons/logo-silver-fox.png" alt="Logo" style="border-radius: 50%;">
                     </div>
                 </div>
                 <div class="login-welcome">
                     <p>Seja Bem Vindo!</p>
                     <p>Acesse sua conta agora mesmo</p>
                 </div>
-                <button class="login-btn">ENTRAR</button>
-                <a href="#" class="forgot-password">Esqueci minha senha</a>
+                <div class="buttons-container">
+                    <button class="login-btn">
+                        <a href="#">ENTRAR</a>
+                    </button>
+                    
+                    <button class="login-btn">
+                        <a href="/pages/register.html">CRIAR CONTA</a>
+                    </button>
+                </div>
+
             </div>
             <div class="login-form">
                 <h2 class="login-title">ENTRE NA SUA CONTA</h2>
@@ -64,7 +74,7 @@
                     </div>
                     <button type="button" class="login-btn">ENTRAR</button>
                 </form>
-                <a href="#" class="forgot-password">Esqueci minha senha</a>
+                <a href="#" class="esqueci-minha-senha">Esqueci minha senha</a>
             </div>
         </div>
     </div>

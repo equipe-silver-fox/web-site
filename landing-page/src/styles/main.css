@@ -409,6 +409,15 @@ header {
     background: transparent;
 }
 
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;  /* Adjust this value based on your needs */
+    gap: 1rem;
+}
+
 .login-title {
     font-size: 24px;
     margin-bottom: 20px;
@@ -420,6 +429,11 @@ header {
 .form-group {
     margin-bottom: 15px;
     position: relative;
+    width: 80%;  /* Adjust this value to control the width of the inputs */
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-group input {
@@ -460,11 +474,15 @@ header {
     color: white;
     border-radius: 20px;
     cursor: pointer;
-    width: 100%;
-    max-width: 120px;
-    margin: 10px auto;
-    display: block;
+    width: 45%;  /* Set width for buttons to allow space between */
+    margin: 0;
+    display: flex;          /* Added flex display */
+    align-items: center;    /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
     transition: all 0.3s ease;
+    text-decoration: none;
+    padding: 8px 16px;
+    text-align: center;
 }
 
 .login-btn:hover {
@@ -473,21 +491,16 @@ header {
     transform: translateY(-2px);
 }
 
-.forgot-password {
-    text-align: center;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.7);
+.login-btn a {
+    color: white;
     text-decoration: none;
-    display: block;
-    margin-top: 10px;
-    transition: color 0.3s ease;
+    font-size: 14px;
+    display: block;  /* Changed from inline to block */
+    width: 100%;     /* Take full width of button */
+    height: 100%;    /* Take full height of button */
 }
 
-.forgot-password:hover {
-    color: rgba(255, 255, 255, 0.9);
-}
-
-    /* Register Form - Adding Glassmorphism */
+/* Register Form - Adding Glassmorphism */
 .register-container {
     display: flex;
     justify-content: center;
@@ -794,4 +807,29 @@ header {
     .contact-item {
         padding: 0.75rem;
     }
+}
+
+.esqueci-minha-senha {
+    display: block;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.esqueci-minha-senha:hover {
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;  /* Changed from center to space-around */
+    margin-top: 1rem;
+    width: 100%;  /* Ensure container takes full width */
 }
