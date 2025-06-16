@@ -23,8 +23,32 @@ O projeto encontra-se em fase inicial de desenvolvimento. Atualmente estamos:
 ## 👥 Nossa Equipe
 Somos um grupo de desenvolvedores apaixonados por tecnologia e pela causa animal. A equipe SilverFox acredita que a tecnologia pode ser uma importante aliada na proteção e bem-estar dos animais.
 
-## 🤝 Contribuições
-Este é um projeto em desenvolvimento e estamos abertos a contribuições! Se você deseja participar ou tem sugestões, entre em contato conosco.
+## 🤝 Sprint's
+Sprit 1
+
+CEO: Deu a ideia da estrutura e visual do site(Lucas).
+
+Productor Owner: Começou a pesquisa para fazer o backend do site(Vitor).
+
+Designer: Começou a fazer a estrutura visual do site no Figma(Gabriel).
+
+Sprint 2
+
+CEO: Auxiliou nas pesquisas e criação do primeiro prototipo do site(Lucas).
+
+Productor Owner: Fez o primeiro prototipo do site(Vitor).
+
+Designer: concluiu o visual do site no figma(Gabriel).
+
+Sprint 3
+
+CEO: Auxiliou nos arquivos para a melhora do site e corrigiu os icones do site(Lucas).
+
+Productor Owner: Criou mais paginas pro site: Login, Cadastro, Pets(Vitor).
+
+Designer: Ajudou na estilização do site(Gabriel).
+
+Scrum Master: Ajudou no envio de imagens presentes no site(Ricardo)
 
 ## 📬 Contato
 - Email: equipe.silverfox@gmail.com
