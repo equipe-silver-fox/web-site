@@ -1,6 +1,6 @@
 # 🦊 SilverFox - Adoção de Pets em Viçosa
 # Orientação:
-Professora Cristiane (Orientadora)
+Professora Cristiane (Orientadora) <br>
 Professor Carlos (Coorientador)
 
 ## 📋 Descrição
