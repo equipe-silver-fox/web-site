@@ -1,4 +1,7 @@
 # 🦊 SilverFox - Adoção de Pets em Viçosa
+# Orientação:
+Professora Cristiane (Orientadora)
+Professor Carlos (Coorientador)
 
 ## 📋 Descrição
 O SilverFox é uma iniciativa que visa facilitar o processo de adoção de pets na cidade de Viçosa (MG), conectando animais que precisam de um lar a pessoas interessadas em adotar. Nossa plataforma busca ser uma ponte entre ONGs, protetores independentes e potenciais tutores, tornando o processo de adoção mais ágil e transparente.
